@@ -1,0 +1,406 @@
+* {
+  font-family: 'Old Standard TT', serif;
+}
+
+body {
+  font-family: 'Old Standard TT', serif;
+}
+
+
+/* Navbar */
+
+header nav .nav-wrapper #dropdownImg {
+  width: 25%;
+}
+
+
+header nav .nav-wrapper .brand-logo {
+    color: rgb(0, 0, 0);
+}
+
+header nav .nav-wrapper a:hover {
+    text-decoration-line: none;
+}
+
+
+header nav li a {
+  color: rgb(0,0,0);
+  font-size: 15px;
+}
+
+header nav li a:hover {
+  text-decoration-line: none;
+  color: rgb(0,0,0);
+}
+
+
+header nav {
+  background-color: transparent;
+}
+
+
+header #dropdown1 li a {
+  color: rgb(0, 0, 0);
+}
+
+
+
+/* Below Header */
+
+
+#belowHeader .belowHeader .h1 {
+  font-size: 50px;
+}
+
+
+#belowHeader .belowHeader #mwhmBtn a {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+
+#belowHeader .belowHeader #mwhmBtn a:hover {
+  text-decoration-line: none;
+}
+
+
+
+/* About Us */
+
+
+#about {
+  background-color: #eaedf2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+#about .aboutHeading h2 {
+  text-transform: uppercase;
+}
+
+
+#about .aboutHeading hr {
+  border: 1px solid;
+  float: left;
+  width: 5%;
+  color: rgb(252, 176, 11);
+}
+
+
+#about .aboutHeading h5 {
+  text-transform: capitalize;
+}
+
+
+
+#about .about .content .social {
+  padding: 0;
+  list-style: outside none none;
+  display: block;
+}
+
+
+#about .about .content .social li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+
+#about .about .content .social li a {
+  border: 1px solid rgb(0, 0, 0);
+  display: block;
+  font-size: 16px;
+  height: 30px;
+  line-height: 28px;
+  width: 30px;
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: all .3s ease 0s;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+}
+
+
+#about .about .content .social li a i {
+  transform: rotate(-45deg); 
+}
+
+
+
+#about .about .content .social li a:hover {
+  background: #222 none repeat scroll 0 0;
+  color: #ffffff;
+}
+
+
+#about .about .h5 {
+  text-align: justify;
+  font-size: 18px;
+}
+
+
+#about .about #personalInfo h3 {
+  font-size: 18px;
+  color: #222;
+  font-weight: bolder;
+}
+
+
+#about .about #personalInfo h3 {
+  font-size: 16px;
+  color: #222;
+}
+
+
+#about .about #personalInfo h4 {
+  font-size: 14px;
+  color: #222;
+}
+
+
+#about .about button a {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+#about .about button a:hover {
+  text-decoration-line: none;
+}
+
+
+
+/* My Skills */
+
+
+#mySkills .mySkills .h2 {
+  text-transform: uppercase;
+}
+
+
+#mySkills .mySkills hr {
+  border: 1px solid;
+  float: left;
+  width: 5%;
+  color: rgb(252, 176, 11);
+}
+
+
+#mySkills .mySkills h5 {
+  text-transform: capitalize;
+}
+
+
+#mySkills .mySkills fieldset {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+#mySkills .mySkills .progress {
+  font-size: 14px;
+}
+
+
+
+/* Work - Portfolio */
+
+
+#work {
+  background-color: #eaedf2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+#work .aboutHeading h2 {
+  text-transform: uppercase;
+}
+
+
+#work .aboutHeading hr {
+  border: 1px solid;
+  float: left;
+  width: 5%;
+  color: rgb(252, 176, 11);
+}
+
+
+#work .aboutHeading h5 {
+  text-transform: capitalize;
+}
+
+
+#work .work .card .image img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#work .work a button {
+  color: #222;
+  font-size: 16px;
+}
+
+
+#work .work button a:hover {
+  text-decoration-line: none;
+}
+
+
+/* Contact Us */
+
+
+#contactus .aboutHeading h2 {
+  text-transform: uppercase;
+}
+
+
+#contactus .aboutHeading hr {
+  border: 1px solid;
+  float: left;
+  width: 5%;
+  color: rgb(252, 176, 11);
+}
+
+
+#contactus .aboutHeading h5 {
+  text-transform: capitalize;
+}
+
+
+/* Form */
+
+#contactus .card {
+  padding: 18px;
+  box-shadow: 2px 5px 7px 10px rgb(255, 255, 255), 0 9px 26px 0 rgb(255, 255, 255);
+}
+
+#contactus form {
+  font-size: 18px;
+  color: rgb(255, 0, 0);
+}
+
+
+#contactus .contactForm input {
+  font-size: 18px;
+}
+
+
+#contactus .contactForm textarea {
+  height: auto;
+  font-size: 18px;
+}
+
+
+#contactus .contactus .card-action > address {
+  font-size: 16px;
+  text-align: center;
+}
+
+#contactus .contactus .card-title {
+  text-transform: none;
+}
+
+
+#contactus .contactus .card-action > a {
+  font-size: 16px;
+  text-align: center;
+  color: #222;
+  text-transform: none;
+}
+
+
+#contactus .contactus .card-action > a:hover {
+  text-decoration-line: none;
+}
+
+
+
+/* change Fonts of SemanticUI Components */
+
+
+.ui.cards>.card>.content>.header:not(.ui) {
+  font-family: 'Old Standard TT', serif !important;
+}
+
+
+.ui.button {
+ font-family: 'Old Standard TT', serif !important; 
+}
+
+
+.ui.fluid.button {
+  font-family: 'Old Standard TT', serif !important;
+  font-size: 18px;
+}
+
+
+.ui.card > .content > .header {
+  font-family: 'Old Standard TT', serif !important;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    * {
+      font-family: 'Old Standard TT', serif;
+    }
+
+    body {
+      font-family: 'Old Standard TT', serif;
+    }
+
+
+    header nav {
+      height: 0px;
+    }
+
+
+    /* Below Header */
+
+    
+    #belowHeader .belowHeader #DVImage {
+      margin-top: 15%;
+    }
+
+
+    /* My Skills */
+
+    #mySkills .mySkills fieldset {
+      margin-top: 15%;
+    }
+
+
+    /* Work - Portfolio */
+
+
+    #work .work > .cards {
+      margin-top: 15%;
+    }
+
+
+    /* Form */
+
+    #contactus .contactForm > .form-group {
+      margin-top: 8%;
+    }
+
+
+    #contactus .contactus .card > .content {
+      margin-top: 15%;
+    }
+
+
+
+}
