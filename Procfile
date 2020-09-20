@@ -1,1 +1,1 @@
-web: gunicorn kitchimichi.wsgi
+web: gunicorn dvResume.wsgi
