@@ -3,11 +3,28 @@
     ----------------------*/
 new TypeIt("#DevDes", {
   strings: [
-      'Web Developer.',
-      'Mobile App Developer.',
       'Full Stack Developer.'
   ],
   speed: 200,
   loop: true,
-  breakLines: false      
+  breakLines: false
 }).go();
+
+
+
+
+// Back to top button
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+    $('.back-to-top').fadeIn('slow');
+  } else {
+    $('.back-to-top').fadeOut('slow');
+  }
+});
+
+$('.back-to-top').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 1500, 'easeInOutExpo');
+  return false;
+});

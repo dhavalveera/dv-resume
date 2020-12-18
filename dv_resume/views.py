@@ -1,49 +1,45 @@
-from django.shortcuts import render, redirect
-
-from .forms import contactUs
-
+from django.shortcuts import render, HttpResponseRedirect
+from django.urls import reverse
 from django.contrib import messages
 from django.core.mail import send_mail
-
+from datetime import date
 
 # Create your views here.
 
 def index(request):
 
+    today = date.today()
+    age = today.year - 1996 - (( today.month, today. day ) < (7, 2))
+
 
     if request.method == "POST":
-
-        form = contactUs(request.POST)
-
-
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            contact = form.cleaned_data['contactno']
-            subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message']
+        fullname = request.POST['fullName']
+        email = request.POST['email']
+        subject = request.POST['subject']
+        message = request.POST['message']
 
         recipient = ['dhavalveera@rocketmail.com']
 
-        contact = str(contact)
-
         send_mail(
-            subject + " - Dhaval Vira Portfolio/Resume",
-            "Full Name = " + name + "\n\n" + "Email ID = " + email + "\n\n" + "Contact Number = " + contact + "\n\n" + "Message = " + message,
-            email,
-            recipient,
-            fail_silently = False
-        )
+        subject + " - Dhaval Vira Resume/Portfolio",
+        "Full Name = " + fullname + "\n\n" + "Email ID = " + email + "\n\n" + "\n\n" + "Message = " + message,
+        email,
+        recipient,
+        fail_silently = False )
 
-        messages.add_message(request, messages.SUCCESS,
-                             'Thank You for Contacting Us, We will get back to you soon.')
-        return redirect('index')
+        messages.add_message(request, messages.SUCCESS, f'Thank You for Contacting Us, We will get back to you soon.')
+        return HttpResponseRedirect(reverse('index'))
 
-    
-    else:
 
-        form = contactUs()
+    return render(request, 'index.html', { 'age' : age })
 
 
 
-    return render(request, 'index.html', { 'form' : form })
+def page_not_found(request, exception):
+
+    return render(request, '404.html', status=404)
+
+
+def custom_error(request, exception=None):
+
+    return render(request, '500.html', status=500)

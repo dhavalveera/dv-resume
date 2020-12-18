@@ -9,38 +9,71 @@ body {
 
 /* Navbar */
 
-header nav .nav-wrapper #dropdownImg {
-  width: 25%;
-}
 
-
-header nav .nav-wrapper .brand-logo {
-    color: rgb(0, 0, 0);
-}
-
-header nav .nav-wrapper a:hover {
-    text-decoration-line: none;
-}
-
-
-header nav li a {
-  color: rgb(0,0,0);
-  font-size: 15px;
-}
-
-header nav li a:hover {
-  text-decoration-line: none;
-  color: rgb(0,0,0);
-}
-
-
-header nav {
-  background-color: transparent;
-}
-
-
-header #dropdown1 li a {
+header nav .navbar-brand {
+  font-family: 'Old Standard TT', serif;
   color: rgb(0, 0, 0);
+  font-size: 28px;
+  background: linear-gradient(to right, #B2FEFA, #0ED2F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #B2FEFA, #0ED2F7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: -moz-linear-gradient(to right, #B2FEFA, #0ED2F7);  /* Chrome 10-25, Safari 5.1-6 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* Header */
+
+
+.home {
+  background: url('https://image.freepik.com/free-vector/blue-white-low-poly-triangle-shapes-background_1035-19007.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home .belowHeader .h1 {
+  font-family: 'Old Standard TT', serif;
+  font-size: 48px;
+
+}
+
+.home .belowHeader h4 {
+  font-family: 'Old Standard TT', serif;
+  font-size: 20px;
+}
+
+
+#DevDes {
+  font-family: 'Old Standard TT', serif;
+  font-size: 20px;
+  color: rgb(0, 0, 255);
+}
+
+
+/* Social Media Account */
+
+
+.home .belowHeader .social-links {
+  margin-top: 30px;
+}
+
+
+.home .belowHeader .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
 }
 
 
@@ -48,359 +81,479 @@ header #dropdown1 li a {
 /* Below Header */
 
 
-#belowHeader .belowHeader .h1 {
-  font-size: 50px;
-}
-
-
-#belowHeader .belowHeader #mwhmBtn a {
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-}
-
-
-#belowHeader .belowHeader #mwhmBtn a:hover {
-  text-decoration-line: none;
-}
-
-
-
-/* About Us */
-
-
-#about {
-  background-color: #eaedf2;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-
-#about .aboutHeading h2 {
+.aboutUsMain .aboutUs h2 {
+  font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
 }
 
 
-#about .aboutHeading hr {
-  border: 1px solid;
-  float: left;
-  width: 5%;
-  color: rgb(252, 176, 11);
-}
-
-
-#about .aboutHeading h5 {
-  text-transform: capitalize;
-}
-
-
-
-#about .about .content .social {
-  padding: 0;
-  list-style: outside none none;
+.aboutUsMain .aboutUs h2::after {
+  content: '';
+  position: relative;
   display: block;
+  width: 40px;
+  height: 3px;
+  background: #0ED2F7;
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 
-#about .about .content .social li {
-  display: inline-block;
-  margin: 0 8px;
-}
-
-
-#about .about .content .social li a {
-  border: 1px solid rgb(0, 0, 0);
-  display: block;
-  font-size: 16px;
-  height: 30px;
-  line-height: 28px;
-  width: 30px;
-  transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transition: all .3s ease 0s;
-  -webkit-transition: all .3s ease 0s;
-  -moz-transition: all .3s ease 0s;
-  -o-transition: all .3s ease 0s;
-}
-
-
-#about .about .content .social li a i {
-  transform: rotate(-45deg); 
-}
-
-
-
-#about .about .content .social li a:hover {
-  background: #222 none repeat scroll 0 0;
-  color: #ffffff;
-}
-
-
-#about .about .h5 {
+.aboutUsMain p {
+  font-size: 18px;
+  font-family: 'Old Standard TT', serif;
   text-align: justify;
+}
+
+
+.aboutUsMain .aboutUs .fsd {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+.aboutUsMain .aboutUs #personalInfo .personalInfo p {
   font-size: 18px;
+  font-family: 'Old Standard TT', serif;
 }
 
-
-#about .about #personalInfo h3 {
+.aboutUsMain .aboutUs #personalInfo .personalInfo p a {
   font-size: 18px;
-  color: #222;
-  font-weight: bolder;
-}
-
-
-#about .about #personalInfo h3 {
-  font-size: 16px;
-  color: #222;
-}
-
-
-#about .about #personalInfo h4 {
-  font-size: 14px;
-  color: #222;
-}
-
-
-#about .about button a {
   color: rgb(0, 0, 0);
-  font-size: 16px;
+  font-family: 'Old Standard TT', serif;
 }
 
-#about .about button a:hover {
-  text-decoration-line: none;
+.aboutUsMain .aboutUs #personalInfo .personalInfo p a:hover {
+  font-size: 18px;
+  color: rgb(0, 0, 255);
+  font-family: 'Old Standard TT', serif;
+}
+
+.aboutUsMain .aboutUs #personalInfo .personalInfo i {
+  font-size: 26px;
+  padding-right: 2px;
+  color: #0563bb;
 }
 
 
+.aboutUsMain .aboutUs .btn-group a button {
+  font-size: 18px;
+  font-family: 'Old Standard TT', serif;
+}
 
-/* My Skills */
+
+/* Skills */
 
 
-#mySkills .mySkills .h2 {
+.skillsMain .skills h2 {
+  font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
 }
 
 
-#mySkills .mySkills hr {
-  border: 1px solid;
-  float: left;
-  width: 5%;
-  color: rgb(252, 176, 11);
+.skillsMain .skills h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0ED2F7;
+  bottom: 0;
+  left: calc(50% - 24px);
 }
 
 
-#mySkills .mySkills h5 {
-  text-transform: capitalize;
-}
-
-
-#mySkills .mySkills fieldset {
-  border: 1px solid black;
-  padding: 10px;
-}
-
-
-#mySkills .mySkills .progress {
+.skillsMain .skills .progress {
   font-size: 14px;
 }
 
 
+/* Work Experience */
 
-/* Work - Portfolio */
-
-
-#work {
-  background-color: #eaedf2;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-
-#work .aboutHeading h2 {
+.wrkExpMain .wrkExp h2 {
+  font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
 }
 
 
-#work .aboutHeading hr {
-  border: 1px solid;
-  float: left;
-  width: 5%;
-  color: rgb(252, 176, 11);
+.wrkExpMain .wrkExp .h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0ED2F7;
+  bottom: 0;
+  left: calc(50% - 45px);
 }
 
 
-#work .aboutHeading h5 {
+.wrkExpMain .wrkExp .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content h4 {
+  font-family: 'Old Standard TT', serif;
   text-transform: capitalize;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+
+.wrkExpMain .wrkExp .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content h5 {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.wrkExpMain .wrkExp .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content p  {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-top: 0;
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 
 
-#work .work .card .image img {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+.wrkExpMain .wrkExp .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content ul li  {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 
-#work .work a button {
-  color: #222;
+/* Education */
+
+
+.eduMain .edu .h2 {
+  font-family: 'Old Standard TT', serif;
+  text-transform: uppercase;
+}
+
+
+.eduMain .edu .h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0ED2F7;
+  bottom: 0;
+  left: calc(50% - 45px);
+}
+
+
+.eduMain .edu .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content h4 {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+
+
+.eduMain .edu .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content h5 {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+.eduMain .edu .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content p  {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-top: 0;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Certification */
+
+
+.certificationMain .certification .h2 {
+  font-family: 'Old Standard TT', serif;
+  text-transform: uppercase;
+}
+
+
+.certificationMain .certification .h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0ED2F7;
+  bottom: 0;
+  left: calc(50% - 45px);
+}
+
+
+.certificationMain .certification .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content h4 {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+
+
+.certificationMain .certification .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content h5 {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+.certificationMain .certification .timeline .timeline__wrap .timeline__items .timeline__item .timeline__content p  {
+  font-family: 'Old Standard TT', serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-top: 0;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Portfolio */
+
+
+.portfolioMain .portfolio .h2 {
+  font-family: 'Old Standard TT', serif;
+  text-transform: uppercase;
+}
+
+
+.portfolioMain .portfolio .h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0ED2F7;
+  bottom: 0;
+  left: calc(50% - 45px);
+}
+
+
+.portfolioMain .portfolio #nav-tab .nav-link {
+  font-family: 'Old Standard TT', serif;
+  font-size: 18px;
+}
+
+
+.portfolioMain .portfolio .tab-content .card .card-body h2 {
+  font-family: 'Old Standard TT', serif;
+}
+
+
+.portfolioMain .portfolio .tab-content .card .card-body h5 {
+  font-family: 'Old Standard TT', serif;
   font-size: 16px;
 }
 
 
-#work .work button a:hover {
-  text-decoration-line: none;
+.portfolioMain .portfolio .tab-content .card .card-body a button {
+  font-family: 'Old Standard TT', serif;
+  font-size: 16px;
 }
 
 
 /* Contact Us */
 
-
-#contactus .aboutHeading h2 {
+.contactMain .contact .h2 {
+  font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
 }
 
 
-#contactus .aboutHeading hr {
-  border: 1px solid;
-  float: left;
-  width: 5%;
-  color: rgb(252, 176, 11);
+.contactMain .contact .h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0ED2F7;
+  bottom: 0;
+  left: calc(50% - 40px);
 }
 
 
-#contactus .aboutHeading h5 {
-  text-transform: capitalize;
-}
-
-
-/* Form */
-
-#contactus .card {
-  padding: 18px;
-  box-shadow: 2px 5px 7px 10px rgb(255, 255, 255), 0 9px 26px 0 rgb(255, 255, 255);
-}
-
-#contactus form {
-  font-size: 18px;
-  color: rgb(255, 0, 0);
-}
-
-
-#contactus .contactForm input {
-  font-size: 18px;
-}
-
-
-#contactus .contactForm textarea {
-  height: auto;
-  font-size: 18px;
-}
-
-
-#contactus .contactus .card-action > address {
+.contactMain .contact .list-unstyled .media p {
   font-size: 16px;
-  text-align: center;
-}
-
-#contactus .contactus .card-title {
-  text-transform: none;
+  text-align: left;
 }
 
 
-#contactus .contactus .card-action > a {
+.contactMain .contact .list-unstyled .media p a {
   font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: 'Old Standard TT', serif;
+}
+
+
+.contactMain .contact .list-unstyled .media p a:hover {
+  font-size: 16px;
+  color: rgb(0, 0, 255);
+  font-family: 'Old Standard TT', serif;
+}
+
+
+.contactMain .contact .list-unstyled .media i {
+  font-size: 24px;
+  padding-right: 2px;
+  color: #0563bb;
+}
+
+
+.contactMain .contact form .contact label {
+  font-family: 'Old Standard TT', serif;
+  font-size: 16px;
+}
+
+
+.contactMain .contact form .contact input {
+  font-family: 'Old Standard TT', serif;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+
+.contactMain .contact form .contact textarea {
+  font-family: 'Old Standard TT', serif;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+
+.contactMain .contact form .contact button {
+  font-family: 'Old Standard TT', serif;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+
+/* Copyright Section */
+
+
+.copyrightMain {
+  background-color:#e9ecef;
+}
+
+
+.copyrightMain .copyright h1 {
+  font-family: 'Old Standard TT', serif;
+}
+
+
+.copyrightMain .copyright .social-links {
+  margin: 0 0 40px 0;
+}
+
+
+.copyrightMain .copyright .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background: #0563bb;
+  color: #fff;
+  line-height: 1;
+  padding: 7px 0;
+  margin-right: 4px;
+  border-radius: 50%;
   text-align: center;
-  color: #222;
-  text-transform: none;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
 }
 
 
-#contactus .contactus .card-action > a:hover {
-  text-decoration-line: none;
+.copyrightMain .copyright p {
+  font-family: 'Old Standard TT', serif;
+  font-size: 16px;
 }
 
 
 
-/* change Fonts of SemanticUI Components */
 
-
-.ui.cards>.card>.content>.header:not(.ui) {
-  font-family: 'Old Standard TT', serif !important;
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
 }
 
-
-.ui.button {
- font-family: 'Old Standard TT', serif !important; 
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: #0563bb;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
 }
-
-
-.ui.fluid.button {
-  font-family: 'Old Standard TT', serif !important;
-  font-size: 18px;
-}
-
-
-.ui.card > .content > .header {
-  font-family: 'Old Standard TT', serif !important;
-}
-
-
 
 
 
 @media (max-width: 768px) {
+  * {
+    font-family: 'Old Standard TT', serif;
+  }
 
-    * {
-      font-family: 'Old Standard TT', serif;
-    }
+  body {
+    font-family: 'Old Standard TT', serif;
+  }
 
-    body {
-      font-family: 'Old Standard TT', serif;
-    }
+  .home .belowHeader {
+    text-align: center;
+    background-attachment: fixed;
+  }
 
+  .home .belowHeader .h1 {
+    margin-top: 10%;
+  }
 
-    header nav {
-      height: 0px;
-    }
-
-
-    /* Below Header */
-
-    
-    #belowHeader .belowHeader #DVImage {
-      margin-top: 15%;
-    }
-
-
-    /* My Skills */
-
-    #mySkills .mySkills fieldset {
-      margin-top: 15%;
-    }
+  .aboutUsMain .aboutUs .fsd {
+    margin-top: 10%;
+  }
 
 
-    /* Work - Portfolio */
+  .portfolioMain .portfolio .tab-content .card {
+    margin-top: 10%;
+  }
 
-
-    #work .work > .cards {
-      margin-top: 15%;
-    }
-
-
-    /* Form */
-
-    #contactus .contactForm > .form-group {
-      margin-top: 8%;
-    }
-
-
-    #contactus .contactus .card > .content {
-      margin-top: 15%;
-    }
-
-
+  .contactMain .contact form .contact {
+    margin-top: 5%;
+  }
 
 }
