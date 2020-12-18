@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import handler404, handler500
+from django.conf.urls import handler404
 
 from dv_resume.views import index
 
@@ -26,4 +26,3 @@ urlpatterns = [
 
 
 handler404 = 'dv_resume.views.page_not_found'
-handler500 = 'dv_resume.views.custom_error'

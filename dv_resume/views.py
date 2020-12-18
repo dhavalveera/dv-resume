@@ -38,8 +38,3 @@ def index(request):
 def page_not_found(request, exception):
 
     return render(request, '404-not-found.html', status=404)
-
-
-def custom_error(request, exception=None):
-
-    return render(request, '500-error.html', status=500)
