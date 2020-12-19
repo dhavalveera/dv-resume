@@ -81,13 +81,13 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 /* Below Header */
 
 
-.aboutUsMain .aboutUs h2 {
+.aboutUsMain .aboutUs .h2 {
   font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
 }
 
 
-.aboutUsMain .aboutUs h2::after {
+.aboutUsMain .aboutUs .h2::after {
   content: '';
   position: relative;
   display: block;
@@ -99,7 +99,7 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 }
 
 
-.aboutUsMain p {
+.aboutUsMain .aboutUs p {
   font-size: 18px;
   font-family: 'Old Standard TT', serif;
   text-align: justify;
@@ -107,29 +107,30 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 .aboutUsMain .aboutUs .fsd {
+  font-family: 'Old Standard TT', serif;
   text-align: left;
   text-transform: capitalize;
 }
 
 
-.aboutUsMain .aboutUs #personalInfo .personalInfo p {
+.aboutUsMain .aboutUs .innerAboutUs #personalInfo .personalInfo p {
   font-size: 18px;
   font-family: 'Old Standard TT', serif;
 }
 
-.aboutUsMain .aboutUs #personalInfo .personalInfo p a {
+.aboutUsMain .aboutUs .innerAboutUs #personalInfo .personalInfo p a {
   font-size: 18px;
   color: rgb(0, 0, 0);
   font-family: 'Old Standard TT', serif;
 }
 
-.aboutUsMain .aboutUs #personalInfo .personalInfo p a:hover {
+.aboutUsMain .aboutUs .innerAboutUs #personalInfo .personalInfo p a:hover {
   font-size: 18px;
   color: rgb(0, 0, 255);
   font-family: 'Old Standard TT', serif;
 }
 
-.aboutUsMain .aboutUs #personalInfo .personalInfo i {
+.aboutUsMain .aboutUs .innerAboutUs #personalInfo .personalInfo i {
   font-size: 26px;
   padding-right: 2px;
   color: #0563bb;
@@ -145,13 +146,13 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 /* Skills */
 
 
-.skillsMain .skills h2 {
+.skillsMain .skills .h2 {
   font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
 }
 
 
-.skillsMain .skills h2::after {
+.skillsMain .skills .h2::after {
   content: '';
   position: relative;
   display: block;
@@ -170,7 +171,7 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 /* Work Experience */
 
-.wrkExpMain .wrkExp h2 {
+.wrkExpMain .wrkExp .h2 {
   font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
 }
@@ -526,6 +527,7 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
 
 
 @media (max-width: 768px) {
+
   * {
     font-family: 'Old Standard TT', serif;
   }
