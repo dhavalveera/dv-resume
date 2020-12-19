@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title> 404 - Page Not Found :: Dhaval Vira Resume </title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!--- Include the above in your HEAD tag ---------->
+
+
+  </head>
+  <body>
+
+      <div class="container container-fluid">
+        <div class="clearfix row text-center">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto">
+            <div class="error-template">
+              <h1>
+                Oops!
+              </h1>
+                <br>
+              <h2>
+                404 Not Found
+              </h2>
+                <br>
+              <div class="error-details">
+                Sorry, an error has occured, Requested page not found!
+              </div>
+                <br>
+              <div class="error-actions">
+                <a href="{% url 'index' %}" class="btn btn-primary btn-lg">
+                  <span class="glyphicon glyphicon-home"></span>
+                    Take Me Home
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </body>
+</html>
